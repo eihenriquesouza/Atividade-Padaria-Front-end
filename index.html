@@ -1,0 +1,128 @@
+<!doctype html>
+<html lang="pt-br">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Mansion's Bakery</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+</head>
+<body>
+
+<nav class="navbar navbar-expand-lg navbar-light bg-light" id="nav">
+    <div class="container-fluid">
+        <a class="navbar-brand">
+            <img src="_images/logo.png" class="logo">
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item"><a class="nav-link active" href="#inicio">Início</a></li>
+                <li class="nav-item"><a class="nav-link" href="#produtos">Produtos</a></li>
+                <li class="nav-item"><a class="nav-link" href="#contato">Contato</a></li>
+                <li class="nav-item"><a class="nav-link" href="#quemsomos">Quem Somos</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<header id="inicio" class="hero-section">
+    <img src="_images/paes.jpg" class="hero-img" alt="Mansion's Bakery">
+    <div class="hero-text">
+        <h1>Bem-vindo à Mansion's Bakery</h1>
+        <p>Sabores artesanais para todos os momentos</p>
+        <a href="#produtos" class="btn btn-warning btn-lg">Confira Nossas Categorias</a>
+    </div>
+</header>
+
+<section id="quemsomos" class="container my-5">
+    <h2 class="text-center mb-4">Quem Somos</h2>
+    <div class="row align-items-center">
+        <div class="col-md-6">
+            <img src="_images/logo.png" class="img-fluid">
+        </div>
+        <div class="col-md-6">
+            <p>Somos a Mansion's Bakery, uma padaria com receitas artesanais, preparados com carinho e ingredientes selecionados para tornar cada momento especial. Oferecemos pães, bolos, biscoitos e salgados fresquinhos todos os dias.</p>
+        </div>
+    </div>
+</section>
+
+<section id="produtos" class="container my-5">
+    <h2 class="text-center mb-4">Nossos Produtos</h2>
+    <div id="categoriasCarousel" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner text-center">
+            <div class="carousel-item active">
+                <img src="_images/paes.jpg" class="d-block mx-auto" alt="Pães">
+                <h3>Pães</h3>
+                <p>Pães fresquinhos todos os dias, com receitas artesanais que encantam o paladar.</p>
+            </div>
+            <div class="carousel-item">
+                <img src="_images/bolos.jpg" class="d-block mx-auto" alt="Bolos">
+                <h3>Bolos</h3>
+                <p>Bolos fofinhos e irresistíveis, ideais para qualquer ocasião.</p>
+            </div>
+            <div class="carousel-item">
+                <img src="_images/biscoitos.jpg" class="d-block mx-auto" alt="Biscoitos">
+                <h3>Biscoitos</h3>
+                <p>Biscoitos crocantes e saborosos, perfeitos para acompanhar seu café ou chá.</p>
+            </div>
+            <div class="carousel-item">
+                <img src="_images/salgados.jpg" class="d-block mx-auto" alt="Salgados">
+                <h3>Salgados</h3>
+                <p>Salgados assados e fritos, preparados diariamente para garantir frescor e sabor.</p>
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#categoriasCarousel" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon"></span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#categoriasCarousel" data-bs-slide="next">
+            <span class="carousel-control-next-icon"></span>
+        </button>
+    </div>
+</section>
+
+<section id="contato" class="container my-5">
+    <h2 class="text-center mb-4">Contato</h2>
+    <div class="row justify-content-center">
+        <div class="col-md-6">
+            <form>
+                <div class="mb-3">
+                    <label class="form-label">Nome</label>
+                    <input type="text" class="form-control" required>
+                </div>
+                <div class="mb-3">
+                    <label class="form-label">E-mail</label>
+                    <input type="email" class="form-control" required>
+                </div>
+                <div class="mb-3">
+                    <label class="form-label">Telefone</label>
+                    <input type="text" class="form-control" required>
+                </div>
+                <div class="mb-3">
+                    <label class="form-label">Mensagem</label>
+                    <textarea class="form-control" rows="3" required></textarea>
+                </div>
+                <button type="submit" class="btn btn-warning w-100">Enviar</button>
+            </form>
+            <div class="mt-3 text-center">
+                <p>Email: contato@mansionbakery.com</p>
+                <p>Telefone: (71) 99999-9999</p>
+                <p>Endereço: Rua Exemplo, 123 - Salvador, BA</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<footer class="bg-warning text-center py-4">
+    <img src="_images/logo.png" class="footer-logo mb-2">
+    <p>Rua Exemplo, 123 - Salvador, BA</p>
+    <p>Redes sociais: <i class="fa-brands fa-facebook"></i> <i class="fa-brands fa-instagram"></i> <i class="fa-brands fa-whatsapp"></i></p>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script src="js/script.js"></script>
+</body>
+</html>

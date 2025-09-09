@@ -6,7 +6,7 @@ body{
 }
 
 .navbar{
-    background: linear-gradient(90deg, #fff 0%, #f8c313 100%);
+    background: linear-gradient(90deg, #fff 0%, #89552c 100%);
     box-shadow: 2px 2px 4px #cdcdcd;
     position: sticky;
     top: 0;
@@ -25,7 +25,7 @@ body{
 }
 
 .logo{
-    width:160px;
+    width:80px;
 }
 
 .hero-section{
@@ -69,7 +69,7 @@ body{
 #categorias h3{
     font-family:"Bebas Neue", sans-serif;
     margin-bottom:10px;
-    color:#d2691e;
+    color:#89552c;
 }
 
 #categorias p{
@@ -81,9 +81,47 @@ body{
 }
 
 footer{
-    background: linear-gradient(90deg, #fff 0%, #f8c313 100%);
+    background: linear-gradient(90deg, #fff 0%, #89552c 100%);
 }
 
 .footer-logo{
     width:120px;
+}
+
+.btn-mansion {
+    background-color: #89552c;
+    color: #000;
+    font-weight: bold;
+    border: none;
+}
+
+.btn-mansion:hover {
+    background-color: #89552c;
+    color: #fff;
+}
+
+.carousel-inner img {
+    width: auto;
+    height: 700px;
+    object-fit: cover;
+    margin: 0 auto;
+}
+
+#quemsomos h2 {
+    font-size: 36px;
+}
+
+#quemsomos p {
+    font-size: 20px;
+    line-height: 1.6;
+}
+
+#produtos h3 {
+    font-size: 28px;
+    font-weight: bold;
+}
+
+#produtos p {
+    font-size: 20px;
+    line-height: 1.5;
 }
